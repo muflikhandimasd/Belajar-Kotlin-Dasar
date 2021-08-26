@@ -43,12 +43,21 @@
 //    }
 //}
 
+//fun main() {
+//    val now = 16
+//    when(now){
+//         7 -> print("Upacara sedang berlangsung")
+//         9 -> print("Upacara telah selesai")
+//         16 -> print("Jam pulang sekolah")
+//        else -> print("Sekarang jam 11")
+//    }
+//}
+
 fun main() {
-    val now = 16
-    when(now){
-         7 -> print("Upacara sedang berlangsung")
-         9 -> print("Upacara telah selesai")
-         16 -> print("Jam pulang sekolah")
-        else -> print("Sekarang jam 11")
+    val finalExam = 'B'
+    val passValues = arrayOf('A', 'B', 'C')
+    when(finalExam){
+        in passValues -> print("Selamat Anda Lulus")
+        !in passValues -> print("Maaf Anda belum lulus")
     }
 }
